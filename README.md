@@ -1,16 +1,42 @@
-# fudo_challenge
+# Fudo Challenge - Instrucciones de Instalación y Uso
 
-A new Flutter project.
+## Requisitos Previos
+- Flutter 3.x
+- Dart 3.x
+- Git
 
-## Getting Started
+## Pasos de Instalación
 
-This project is a starting point for a Flutter application.
+1. Clonar el repositorio:
+```bash
+git clone <url-del-repositorio>
+cd fudo_challenge
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. Instalar dependencias:
+```bash
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Generar código necesario:
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Ejecutar la aplicación:
+```bash
+flutter run
+```
+
+## Tests
+
+Ejecutar todos los tests:
+```bash
+flutter test
+```
+
+Ejecutar tests con cobertura:
+```bash
+flutter test --coverage
+```
+
